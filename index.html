@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>SmashBoard</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/scrollbars.css">
+</head>
+
+<body>
+	<div id="x">✕</div>
+
+	<div id="camera">
+		<div id="cameraFeed"></div>
+		<canvas id="placeholder"></canvas>
+	</div>
+
+	<div id="notcamera">		
+		<div id="roboKey">
+			<div id="roboDiagram">
+				<div id="driveModeSelect">
+					<input type="radio" id="c" name="driveMode" value="curvature" checked>
+					<label for="c">Curvature</label>
+					
+					<input type="radio" id="a" name="driveMode" value="arcade">
+					<label for="a">Arcade</label>
+					
+					<input type="radio" id="t" name="driveMode" value="tank">
+					<label for="t">Tank</label>
+				</div>
+				<div id="sliders">
+					<div class="rangeHolder">
+						<div class="inputTitle">
+							Linear Cutoff:
+							<div id="linearC" class="numbers"></div>
+						</div>
+						<input id="linearCutoff" type="range" min="0" max="1" step="0.05" disabled>
+					</div>
+					<div class="rangeHolder">
+						<div class="inputTitle">
+							Wide Turn Cutoff:
+							<div id="turnC" class="numbers"></div>
+						</div>
+						<input id="turnCutoff" type="range" min="0" max="1" step="0.05" disabled>
+					</div>
+					<div class="rangeHolder">
+						<div class="inputTitle">
+							Linear Speed:
+							<div id="linearS" class="numbers"></div>
+						</div>
+						<input id="linearSpeed" type="range" min="0" max="1" step="0.05" disabled>
+					</div>
+					<div class="rangeHolder">
+						<div class="inputTitle">
+							Turn Precision:
+							<div id="turnP" class="numbers"></div>
+						</div>
+						<input id="turnPrecision" type="range" min="2" max="6" disabled>
+					</div>
+				</div>
+			</div>
+			<div id="keyBinder">
+				<div id="topbar">
+					Profile:
+					<select id="profile"></select>
+					<div id="newP" class="submitBtn">New Profile</div>
+					<div id="delP" class="submitBtn">Delete Profile</div>
+					<div class="rightAlign">
+						<div id="newJ" class="submitBtn">New Joystick</div>
+						<div id="newB" class="submitBtn">New Button</div>
+						<div id="newK" class="submitBtn">New Keybind</div>
+					</div>
+				</div>
+				<div id="currentConfig"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="login">
+		<div id="connect-address"></div><!--dont remove this, everything breaks if you do-->
+		<button id="connect" class="connect-button" disabled>Connecting</button>
+	</div>
+
+	<script type="text/javascript" src="networktables/networktables.js"></script>
+	<script type="text/javascript" src="connection.js"></script>
+	<script type="text/javascript" src="placeholder.js"></script>
+	<script type="text/javascript" src="ui.js"></script>
+	<script type="text/javascript" src="keybind.js"></script>
+</body>
+
+</html>

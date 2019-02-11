@@ -1,0 +1,23 @@
+{
+	"operator": {
+		"hatch1": 72,
+		"hatch2": 73,
+		"hatch3": 74,
+		"ball1": 75,
+		"ball2": 76,
+		"ball3": 77,
+		"armSlap": 31,
+		"armShoot": 16,
+		"armBall": 30,
+		"intakeSuck": 29,
+		"intakeBlow": 41,
+		"eject": 56
+	},
+	"driver": {
+		"throttle": 1,
+		"turning": 4,
+		"forward": 0,
+		"ramp": 7,
+		"wheels": 6
+	}
+}

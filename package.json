@@ -1,0 +1,15 @@
+{
+  "name": "frcdashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "console.log(\"Test Passed!\")"
+  },
+  "author": "Infernis",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^4.0.1",
+    "wpilib-nt-client": "^1.7.1"
+  }
+}
